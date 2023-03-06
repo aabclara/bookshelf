@@ -9,6 +9,6 @@ export const styles = StyleSheet.create({
     },
     textMarker: {
         marginLeft: 5,
-        fontize: 20
+        fontSize: 20
     }
 })

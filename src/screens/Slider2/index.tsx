@@ -4,17 +4,16 @@ import {
     ComponentButtonSlider, ComponentListMarker, ComponentTitleSlider
 } from '../../components';
 import { styles } from './styles';
-export function Slider1({ setPageI }: IPage) {
-    const slide1 = require("../../assets/slide1.png")
+export function Slider2({ setPageI }: IPage){
+    const slide1 = require("../../assets/slide2.png")
     const slide1Texts = [
-        { id: '1', text: 'Encontre um livro' },
-        { id: '2', text: 'Verifique a disponibilidade' },
-        { id: '3', text: 'Veja as obras disponíveis' },
+        { id: '1', text: 'Fale com o(a) bibliotecário(a)' },
+        { id: '2', text: 'Envie um feedback' }
     ]
     return (
         <ImageBackground source={slide1} style={styles.container} >
            <View style={styles.panel}>
-                <ComponentTitleSlider titleI='Estante' />
+                <ComponentTitleSlider titleI='Fale Conosco' />
                 <FlatList
                     data={slide1Texts}
                     renderItem={({ item }) =>
