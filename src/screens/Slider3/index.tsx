@@ -12,7 +12,7 @@ export function Slider3({ setPageI }: IPage){
         { id: '3', text: 'Cancelar o empréstimo' }
     ]
     return (
-        <ImageBackground source={slide1} style={styles.container} >
+        <View style={styles.container} >
            <View style={styles.panel}>
                 <ComponentTitleSlider titleI='Sistema de Empréstimo' />
                 <FlatList
@@ -29,6 +29,6 @@ export function Slider3({ setPageI }: IPage){
                 <ComponentButtonSlider onPressI={() => setPageI(3)} />
                 <ComponentButtonSlider onPressI={() => setPageI(4)} />
             </View>
-        </ImageBackground>
+        </View>
     );
 }

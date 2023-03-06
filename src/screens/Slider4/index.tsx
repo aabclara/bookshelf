@@ -12,7 +12,7 @@ export function Slider4({ setPageI }: IPage){
         { id: '3', text: 'Saiba mais...' }
     ]
     return (
-        <ImageBackground source={slide1} style={styles.container} >
+        <View style={styles.container} >
            <View style={styles.panel}>
                 <ComponentTitleSlider titleI='Outros' />
                 <FlatList
@@ -29,6 +29,6 @@ export function Slider4({ setPageI }: IPage){
                 <ComponentButtonSlider onPressI={() => setPageI(3)} />
                 <ComponentButtonSlider onPressI={() => setPageI(4)} />
             </View>
-        </ImageBackground>
+        </View>
     );
 }
