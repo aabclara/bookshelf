@@ -9,6 +9,7 @@ export interface ITextMarker {
 export function ListMarker({ textMarker }: ITextMarker) {
     return (
         <View style={styles.listMarker}>
+            < Marker />
             <Text style={styles.textMarker} >{textMarker}</Text>
         </View>
     )
