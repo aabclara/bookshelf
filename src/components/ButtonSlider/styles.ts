@@ -5,7 +5,13 @@ export const styles = StyleSheet.create({
     ball: {
         width: 30,
         height: 30,
-        backgroundColor:'#FE605F',
+        backgroundColor: colors.thirdLight,
+        borderRadius: 15
+    },
+    click: {
+        width: 30,
+        height: 30,
+        backgroundColor: '#FE605F',
         borderRadius: 15
     }
 })
