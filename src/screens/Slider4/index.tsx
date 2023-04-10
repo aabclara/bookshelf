@@ -24,11 +24,6 @@ export function Slider4({ setPageI }: IPage){
                     }
                     keyExtractor={(item) => item.id}
                 />
-                <TouchableOpacity style={styles.buttonEntrar} onPress={
-                    () => setPageI(5)
-                }>
-                    <Text style={styles.buttonEntrarText}>Entrar</Text>
-                </TouchableOpacity>
             </View>
             <View style={styles.buttonSlider}>
                 <ComponentButtonSlider onPressI={() => setPageI(1)} page={false}/>
