@@ -4,16 +4,25 @@ import {
     TextInput
 } from "react-native";
 import {styles} from "./styles";
-import { MaterialIcons, FontAwesome5 } from '@expo/vector-icons';
+import { MaterialIcons, FontAwesome5, AntDesign } from '@expo/vector-icons';
 import { colors } from '../../styles/colors';
 import {ComponentButtonInterface} from '../../components';
-import { LoginTypes } from "../../navigations/login.navigation"
+import { LoginTypes } from '../../navigations/login.navigation';
 
-export function Login({navigation}: LoginTypes) {
+export function Cadastrar({navigation}: LoginTypes) {
     return(
         <View style={styles.container}>
             <KeyboardAvoidingView>
-                <Text style={styles.title}>Login</Text>
+                <Text style={styles.title}>Cadastre-se</Text>
+                <View style={styles.formRow}>
+                    <AntDesign name="user" style={styles.icon} />
+                    <TextInput
+                        placeholder="Nome"
+                        placeholderTextColor={colors.thirdLight}
+                        autoCapitalize="none"
+                        style={styles.input}
+                    />
+                </View>
                 <View style={styles.formRow}>
                     <MaterialIcons name="email" style={styles.icon} />
                     <TextInput
@@ -34,8 +43,8 @@ export function Login({navigation}: LoginTypes) {
                         style={styles.input}
                     />
                 </View>
-                <ComponentButtonInterface title="Entrar" type="secondary" onPressI={() => {console.log('Login') }} />
-                <ComponentButtonInterface title="Cadastre-se" type="thirdLight" onPressI={() => { navigation.navigate('Cadastrar') }} />
+                <ComponentButtonInterface title="Entrar" type="secondary" onPressI={() => { console.log('Salvar') }} />
+                <ComponentButtonInterface title="Voltar" type="thirdLight" onPressI={() => { navigation.navigate('Login') }} />
             </KeyboardAvoidingView>
         </View>
     )
