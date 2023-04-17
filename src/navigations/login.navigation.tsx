@@ -12,7 +12,7 @@ export type LoginTypes = {
 export function LoginNavigation() {
   const Stack = createStackNavigator<LoginStackParamList>();
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Login" component={ScreenLogin} />
       <Stack.Screen name="Cadastrar" component={ScreenCadastrar} />
     </Stack.Navigator>
