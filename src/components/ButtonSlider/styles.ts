@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     click: {
         width: 30,
         height: 30,
-        backgroundColor: colors.black,
+        backgroundColor: colors.fourth,
         borderRadius: 15
     }
 })

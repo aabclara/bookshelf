@@ -22,6 +22,11 @@ export const styles = StyleSheet.create({
         borderRadius: 5,
         margin: 10
     },
+    buttonFourth: {
+        backgroundColor: colors.fourth,
+        borderRadius: 5,
+        margin: 10
+    },
     text: {
         color: colors.white,
         fontWeight: "bold",

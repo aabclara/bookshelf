@@ -37,7 +37,7 @@ export function Login({navigation}: LoginTypes) {
                 <ComponentButtonInterface 
                     title="Entrar" 
                     type="secondary" 
-                    onPressI={() => {console.log('Login') }} 
+                    onPressI={() => navigation.navigate('Tab')}
                 />
                 <ComponentButtonInterface 
                     title="Cadastre-se" 

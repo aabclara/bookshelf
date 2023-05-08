@@ -4,7 +4,7 @@ import { styles } from './styles'
 export interface IBInterface extends TouchableOpacityProps{
     onPressI: () => void
     title: string
-    type: 'primary' | 'secondary' | 'third' | 'thirdLight'
+    type: 'primary' | 'secondary' | 'third' | 'thirdLight' | 'fourth'
 }
 export function ButtonInterface({ onPressI, title, type, ...rest }: IBInterface) {
     return (
@@ -12,6 +12,7 @@ export function ButtonInterface({ onPressI, title, type, ...rest }: IBInterface)
             type == "primary" ? styles.buttonPrimary:
                 type == "secondary" ? styles.buttonSecondary:
                     type == "third" ? styles.buttonThird:
+                        type == "fourth" ? styles.buttonFourth:
                         styles.buttonThirdLight
         } onPress={onPressI} 
             {...rest} 
