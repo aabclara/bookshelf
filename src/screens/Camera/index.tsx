@@ -89,7 +89,7 @@ return (
   ) : (
     <Camera style={styles.camera} type={type} ref={ref}>
       <View style={styles.ladinho}>
-        <TouchableOpacity onPress={() => navigation.navigate('Photo')} style={styles.botaocima} /*Para voltar para o tab */>
+        <TouchableOpacity onPress={() => navigation.navigate('Photo')} style={styles.voltar} /*Para voltar para o tab */>
             <Ionicons name="caret-back-circle" size={40} color={colors.white} />
         </TouchableOpacity>
         <TouchableOpacity onPress={takePicture} style={styles.botao1} /* Para tirar  a foto */>

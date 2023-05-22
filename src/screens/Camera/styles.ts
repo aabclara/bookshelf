@@ -39,6 +39,13 @@ export const styles = StyleSheet.create({
     alignItems: "flex-end",
     marginRight: 5
   },
+  voltar: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    marginTop: 20,
+    marginLeft: 5,
+  },
   botaocima: {
     flexDirection: "row",
     alignItems: "center",

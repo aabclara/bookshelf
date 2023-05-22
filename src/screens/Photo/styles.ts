@@ -50,23 +50,12 @@ export const styles = StyleSheet.create({
       justifyContent: "flex-start",
       marginLeft: 5
     },
-    ladinho: {
-      flexDirection: "row",
-      alignItems: "center"
-    },
-    ladinho2: {
-      flexDirection: "row",
-      justifyContent: "space-between",
-      marginLeft: 10,
-      marginRight: 10,
-      marginTop: 15
-    },
     novo: {
       flexDirection: "row",
       alignItems: "center",
       justifyContent: 'flex-end'
     },
-    setinha: {
+    seta: {
       flexDirection: "row",
       justifyContent: "flex-start",
       marginTop: 50

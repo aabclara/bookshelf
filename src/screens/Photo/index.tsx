@@ -64,7 +64,7 @@ export function PhotoScreen({navigation}: LoginTypes) {
         </View>
       ):(
       <View style={styles.container}>
-          <TouchableOpacity onPress={() => navigation.navigate('Tab')} style={styles.setinha}>
+          <TouchableOpacity onPress={() => navigation.navigate('Tab')} style={styles.seta}>
             <Ionicons name="caret-back-circle" size={40} color={colors.secondary} />
           </TouchableOpacity>
         <View style={styles.container2}>
