@@ -14,9 +14,9 @@ export const styles = StyleSheet.create({
     
   },
   text: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'bold',
-    color: colors.black,
+    color: colors.primary,
   },
   img: {
     height: "100%",
@@ -24,6 +24,10 @@ export const styles = StyleSheet.create({
   },
   meio: {
     alignItems: "center",
+  },
+  takenpic: {
+    marginTop: 150,
+    justifyContent: 'center'
   }
 });
   

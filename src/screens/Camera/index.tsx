@@ -116,9 +116,9 @@ return (
            }}/>
           <View style={styles.meio}>
                     {face && face.smilingProbability && face.smilingProbability > 0.1 ? (
-                        <Text>Sorrindo</Text>
+                        <Text style={styles.text}>Sorrindo</Text>
                     ) : (
-                        <Text>Não está sorrindo</Text>
+                        <Text style={styles.text}>Não está sorrindo</Text>
                     )}
           </View>
           <ComponentButtonInterface title=' Tirar Foto' type='primary' onPressI={takePicture}/>
@@ -126,6 +126,7 @@ return (
         </>
   ) : (
       <>
+      <View style={styles.takenpic}>
         <ComponentButtonInterface title=' Tirar Foto' type='primary' onPressI={()=>setTakePhoto(true)}/>
         <ComponentButtonInterface title='Salvar' type='primary' onPressI={SavePhoto}/>
         <ComponentButtonInterface title='Abrir imagem' type='primary' onPressI={pickImage}/>
@@ -133,6 +134,7 @@ return (
         {photo && photo.uri && (
             <Image source={{uri: photo!.uri}} style={styles.img} />
         )}
+      </View>
         </>
         )}
     </View>
