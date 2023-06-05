@@ -13,6 +13,7 @@ export function Perfil({navigation}:TabTypes){
     return(
         <View style={styles.container}>
             <Text>Perfil</Text>
+            <Text>Bem vindo á página do seu perfil!</Text>
             <ComponentButtonInterface 
                 title="Voltar" 
                 type="fourth" 
