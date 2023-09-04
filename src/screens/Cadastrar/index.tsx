@@ -44,6 +44,7 @@ export function Cadastrar({navigation}: LoginTypes) {
             setIsLoading(false)
         }
     }
+    //ajustes
     function handleChange(item: IRegister) {
         setData({ ...data, ...item})
     }
