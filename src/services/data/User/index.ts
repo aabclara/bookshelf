@@ -22,13 +22,15 @@ export interface IUserLogin {
         expires_at: string
     }
 }
-//Classe
 class UserData {
     register(data: IRegister) {
-        return api.post<IUser>('/register', data) //<Dado que será retornado após o cadastro IUser>
+        return api.post<IUser>('/register', data); //<Dado que será retornado após o cadastro IUser>
     }
     login(data: IAuthenticate) {
-        return api.post<IUserLogin>('/login', data) //<Dado que será retornado após o login IUserLogin>
+        return api.post<IUserLogin>('/login', data); //<Dado que será retornado após o login IUserLogin>
+    }
+    updateToken(token: string) {
+        return api.put('/user', {token})
     }
 }
 export default new UserData()
